@@ -1,5 +1,7 @@
 /* Reset some default styles */
-body, h1, p {
+body,
+h1,
+p {
   margin: 0;
   padding: 0;
 }
@@ -17,6 +19,7 @@ header {
   padding: 20px 0;
   text-align: center;
 }
+
 footer {
   background-color: #1db954;
   padding: 17px 0;
@@ -27,7 +30,8 @@ footer {
 /* Style the header h1 */
 header h1 {
   font-size: 2rem;
-  color: #1db954; /* Green color similar to Spotify */
+  color: #1db954;
+  /* Green color similar to Spotify */
   text-transform: uppercase;
 }
 
@@ -35,7 +39,8 @@ header h1 {
 label {
   display: block;
   margin-bottom: 5px;
-  color: #1db954; /* Green color similar to Spotify */
+  color: #1db954;
+  /* Green color similar to Spotify */
   font-weight: bold;
   font-size: 1.2rem;
   /* text-align: center; */
@@ -43,14 +48,16 @@ label {
 
 /* Style the audio controls */
 audio.myaudi {
-  width: 100%; /* Adjust as needed */
+  width: 100%;
+  /* Adjust as needed */
   max-width: 250px;
 }
 
 /* Create a Spotify-inspired grid for media elements with three equal columns */
 .audio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-template-columns: repeat(3, 1fr);
+  /* Three equal columns */
   gap: 20px;
   padding: 20px;
   background-color: #000;
@@ -63,8 +70,10 @@ main audio {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.4s;
-  background-color: #333; /* Dark background */
-  color: #1db954; /* Green color for audio controls */
+  background-color: #333;
+  /* Dark background */
+  color: #1db954;
+  /* Green color for audio controls */
 }
 
 /* Add hover effect for audio elements */
@@ -80,10 +89,12 @@ main audio:hover {
 /* Style the side pane */
 .side-pane {
   background-color: #1db954;
-  width: 200px;
-  padding: 20px;
+  width: 100%;
+  padding: 15px;
   color: white;
+  
 }
+
 
 .side-pane ul {
   list-style: none;
@@ -99,12 +110,14 @@ main audio:hover {
   color: white;
   font-weight: bold;
   display: block;
-  transition: color 0.3s; /* Smooth color transition on hover */
+  transition: color 0.3s;
+  /* Smooth color transition on hover */
 }
 
 /* Change link color on hover */
 .side-pane a:hover {
-  color: #000; /* Dark color on hover */
+  color: #000;
+  /* Dark color on hover */
 }
 
 /* Style the "Sign Up" and "Log In" buttons */
@@ -113,27 +126,44 @@ main audio:hover {
 }
 
 .auth-buttons button {
-  background-color: #000; /* Dark color */
-  color: #1db954; /* Green color similar to Spotify */
+  background-color: #000;
+  /* Dark color */
+  color: #1db954;
+  /* Green color similar to Spotify */
   border: none;
   padding: 10px 20px;
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s; /* Smooth button transition on hover */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth button transition on hover */
 }
 
 /* Change button background and text color on hover */
 .auth-buttons button:hover {
-  background-color: #1db954; /* Green background on hover */
-  color: #000; /* Dark text on hover */
+  background-color: #1db954;
+  /* Green background on hover */
+  color: #000;
+  /* Dark text on hover */
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .audio-container {
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns for small screens */
+    grid-template-columns: repeat(2, 1fr);
+    /* Two equal columns for small screens */
   }
-  
+
   main audio {
-    width: 100%; /* Full width for audio elements on small screens */
+    width: 100%;
+    /* Full width for audio elements on small screens */
   }
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+.red {
+  
+  padding-top: 9px;
 }
