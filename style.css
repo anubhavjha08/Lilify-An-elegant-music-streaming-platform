@@ -74,12 +74,12 @@ main audio:hover {
 
 /* Add a green border to the audio elements on hover */
 main audio:hover {
-  border: 3px solid #1db954; /* Green color similar to Spotify */
+  border: 3px solid #1db954;
 }
 
 /* Style the side pane */
 .side-pane {
-  background-color: #1db954; /* Green color similar to Spotify */
+  background-color: #1db954;
   width: 200px;
   padding: 20px;
   color: white;
