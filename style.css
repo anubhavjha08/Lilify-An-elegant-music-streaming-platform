@@ -92,7 +92,7 @@ main audio:hover {
   width: 100%;
   padding: 15px;
   color: white;
-  
+
 }
 
 
@@ -164,6 +164,28 @@ main audio:hover {
 }
 
 .red {
-  
+
   padding-top: 9px;
+}
+
+/* Your existing CSS */
+
+/* Create a Spotify-inspired grid for media elements with four equal columns */
+.audio-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 20px;
+  padding: 20px;
+  background-color: #000;
+  align-items: center;
+}
+
+/* Rest of your existing CSS remains unchanged */
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .audio-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for small screens */
+  }
+  /* Your other responsive CSS */
 }
