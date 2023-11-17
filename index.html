@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercise 1</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <script src="script.js"></script>
 </head>
 
@@ -19,16 +19,18 @@
   <nav class="side-pane">
     <ul>
       <li><a href="https://anubhavjha0812.github.io/Lilify-An-elegant-music-streaming-platform/">Home</a></li>
+
       <li><a href="https://open.spotify.com/search">Search</a></li>
-      <li><a href="#">Your Library</a></li>
+
+      <li><a href="#">Library</a></li>
+
       <li><button class="green-bg">Sign Up</button></li>
-      <li><button class="green-bg"><a
-            href="https://accounts.spotify.com/en-GB/login?continue=https%3A%2F%2Fopen.spotify.com%2Fsearch"></a> Log
-          In</button></li>
+
+      <!-- ***learning: a button tag cant contain <a> -->
+      <li><a href="https://accounts.spotify.com/en-GB/login?continue=https%3A%2F%2Fopen.spotify.com%2Fsearch"><button
+            class="green-bg">Log In</button></a></li>
     </ul>
   </nav>
-
-  <br>
 
   <main class="audio-container">
     <!-- c1 -->
@@ -36,65 +38,70 @@
 
       <div class="audio-row">
         <label for="audio">Do It For You</label>
-        <audio src="(Everything I Do) I Do It For You - Bryan Adams (Boyce Avenue ft. Connie Talbot acoustic cover).mp3" controls
-          class="myaudi"></audio>
+        <audio
+          src="assets/songs/(Everything I Do) I Do It For You - Bryan Adams (Boyce Avenue ft. Connie Talbot acoustic cover).mp3"
+          controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Alan Walker - Lily</label>
-        <audio src="Alan Walker, K 391 & Emelie Hollow - Lily - Cover (Violin).mp3" controls class="myaudi"></audio>
-      </div>
-
-      <div class="audio-row">
-        <label for="audio">Britney Criminal</label>
-        <audio src="britney spears - criminal (cover)   nursena yener.mp3" controls class="myaudi"></audio>
-      </div>
-
-      <div class="audio-row">
-        <label for="audio">Can't Hold Us</label>
-        <audio src="Can't Hold Us - Acoustic - Macklemore & Ryan Lewis - Madilyn Bailey Cover - on iTunes.mp3" controls
+        <audio src="assets/songs/Alan Walker, K 391 & Emelie Hollow - Lily - Cover (Violin).mp3" controls
           class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
+        <label for="audio">Britney Criminal</label>
+        <audio src="assets/songs/britney spears - criminal (cover)   nursena yener.mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Can't Hold Us</label>
+        <audio
+          src="assets/songs/Can't Hold Us - Acoustic - Macklemore & Ryan Lewis - Madilyn Bailey Cover - on iTunes.mp3"
+          controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
         <label for="audio">Counting Stars</label>
-        <audio src="Counting Stars - OneRepublic   Alex Goot, Chrissy Costanza, KHS.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Counting Stars - OneRepublic   Alex Goot, Chrissy Costanza, KHS.mp3" controls
+          class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Girls Like You</label>
-        <audio src="Girls Like You (Acoustic Cover).mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Girls Like You (Acoustic Cover).mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Let It Go - Bay</label>
-        <audio src="Let It Go - James Bay (Colin & Caroline acoustic cover).mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Let It Go - James Bay (Colin & Caroline acoustic cover).mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Let Me Love You - Bieber</label>
-        <audio src="Let Me Love You - Justin Bieber +DJ Snake   Alex Goot, ATC, KHS.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Let Me Love You - Justin Bieber +DJ Snake   Alex Goot, ATC, KHS.mp3" controls
+          class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Despacito - Violin</label>
-        <audio src="Luis Fonsi - Despacito ft. Daddy Yankee - Cover (Violin).mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Luis Fonsi - Despacito ft. Daddy Yankee - Cover (Violin).mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Gomez - Heart</label>
-        <audio src="Selena Gomez - The Heart Wants What It Wants (Nicole Cross Official Cover Video).mp3" controls
+        <audio src="assets/songs/Selena Gomez - The Heart Wants What It Wants (Nicole Cross Official Cover Video).mp3" controls
           class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Señorita - Violin</label>
-        <audio src="SEÑORITA  - LIVE VIOLIN PERFORMANCE.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/SEÑORITA  - LIVE VIOLIN PERFORMANCE.mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Stay With Me - Smith</label>
-        <audio src="Stay With Me - Sam Smith (Hannah Trigwell acoustic cover).mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Stay With Me - Sam Smith (Hannah Trigwell acoustic cover).mp3" controls class="myaudi"></audio>
       </div>
     </div>
 
@@ -102,107 +109,142 @@
     <div class="audio-column">
 
       <div class="audio-row">
+        <label for="audio">Nainowale ne</label>
+        <audio src="assets/songs/People X Nainowale Ne (Mashup) - Full Version Neeti Mohan Libianca Lo-fi 2307 Insta Viral [TubeRipper.com].mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Gangster Paradise</label>
+        <audio src="assets/songs/Gangster Paradise - Coolio   Slowed & Reverb  @aviklo-firemix   Peaky Blindera  Trending Attitude.mp3" controls class="myaudi"></audio>
+      </div>
+      <div class="audio-row">
         <label for="audio">12 Ladke - Tony Kakkar</label>
-        <audio src="12 Ladke - Tony Kakkar 320 Kbps.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/12 Ladke - Tony Kakkar 320 Kbps.mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">TU HAI KAHAN</label>
-        <audio src="AUR - TU HAI KAHAN - Raffey - Usama - Ahad (Official Music Video).mp3" controls
+        <audio src="assets/songs/AUR - TU HAI KAHAN - Raffey - Usama - Ahad (Official Music Video).mp3" controls
           class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Brown Rang</label>
-        <audio src="Brown Rang.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Brown Rang.mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Dope Shope</label>
         <audio
-          src="Honey Singh - Dope Shope (Lyrical)  Deep Money     Latest Punjabi Song 2023   New Punjabi Songs 2023.mp3"
+          src="assets/songs/Honey Singh - Dope Shope (Lyrical)  Deep Money     Latest Punjabi Song 2023   New Punjabi Songs 2023.mp3"
           controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Walian Harmoor</label>
-        <audio src="Waalian  Harnoor (Full Song) Gifty   The Kidd   Rubbal GTR   Punjabi Song   JattLife Studios.mp3"
+        <audio src="assets/songs/Waalian  Harnoor (Full Song) Gifty   The Kidd   Rubbal GTR   Punjabi Song   JattLife Studios.mp3"
           controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Ambarsariya</label>
-        <audio src="Ambarsariya Fukrey  Song By Sona Mohapatra   Pulkit Samrat, Priya Anand.mp3" controls
+        <audio src="assets/songs/Ambarsariya Fukrey  Song By Sona Mohapatra   Pulkit Samrat, Priya Anand.mp3" controls
           class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">I Hate Luv Storys Title Track</label>
+        <audio src="assets/songs/I Hate Luv Storys Title Track Full Video - Sonam Kapoor Imran Khan Vishal Dadlani Kumaar.mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Kukkad</label>
+        <audio src="assets/songs/Kukkad - SOTY @aliabhatt   Sidharth Malhotra  @varundhawan   Shahid Mallya   Vishal & Shekhar   4K.mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Saawariya</label>
+        <audio src="assets/songs/Saawariya - Official Lyric Video  Aastha Gill  Kumar Sanu  Arjun Bijlani.mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Vele Full Video</label>
+        <audio src="assets/songs/Vele Full Video - SOTY Sidharth Malhotra,Varun Dhawan Vishal Dadlani,Shekhar Ravjiani.mp3" controls class="myaudi"></audio>
       </div>
     </div>
 
     <!--c3-->
     <div class="audio-column">
-      
+
       <div class="audio-row">
         <!-- <img src="images.jpeg" width="100" height="100" alt="Thumbnail"> -->
         <label for="audio">Kalaastar</label>
-        <audio src="Kalaastar - Yo Yo Honey Singh 320 Kbps.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Kalaastar - Yo Yo Honey Singh 320 Kbps.mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Kesariya</label>
-        <audio src="Kesariya - Brahmastra 320 Kbps.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Kesariya - Brahmastra 320 Kbps.mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Love Nwantiti</label>
-        <audio src="CKay - Love Nwantiti (Lyrics).......mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/CKay - Love Nwantiti (Lyrics).......mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Without Me</label>
-        <audio src="Eminem - Without Me (Official Music Video).mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Eminem - Without Me (Official Music Video).mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Nazm Nazm</label>
         <audio
-          src="Nazm Nazm - Lyrical   Bareilly Ki Barfi   Kriti Sanon, Ayushmann Khurrana & Rajkummar Rao   Arko.mp3"
+          src="assets/songs/Nazm Nazm - Lyrical   Bareilly Ki Barfi   Kriti Sanon, Ayushmann Khurrana & Rajkummar Rao   Arko.mp3"
           controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Calm Down</label>
-        <audio src="Rema, Selena Gomez - Calm Down (Official Music Video).mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Rema, Selena Gomez - Calm Down (Official Music Video).mp3" controls class="myaudi"></audio>
       </div>
-      
+
       <div class="audio-row">
         <label for="audio">Kabhi Kabhi</label>
-        <audio src="Full Video Kabhi Kabhi Aditi Zindagi   Jaane Tu Ya Jaane Na   A.R. Rahman   Rashid Ali.mp3" controls
+        <audio src="assets/songs/Full Video Kabhi Kabhi Aditi Zindagi   Jaane Tu Ya Jaane Na   A.R. Rahman   Rashid Ali.mp3" controls
           class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Pani De Rang</label>
-        <audio src="Pani Da Rang   Full Song With Lyrics   Vicky Donor   Ayushmann Khurrana & Yami Gautam.mp3" controls
+        <audio src="assets/songs/Pani Da Rang   Full Song With Lyrics   Vicky Donor   Ayushmann Khurrana & Yami Gautam.mp3" controls
           class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
+        <label for="audio">Mitti Di Khushboo</label>
+        <audio src="assets/songs/OFFICIAL 'Mitti Di Khushboo' FULL VIDEO Song   Ayushmann Khurrana   Rochak Kohli.mp3"
+          controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
         <label for="audio">Yeh Ex Zindagi</label>
-        <audio src="Yeh Ek Zindagi (From  Monica, O My Darling ).mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Yeh Ek Zindagi (From  Monica, O My Darling ).mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Kaleshi Chori</label>
         <audio
-          src="Kaleshi Chori (Video) Pranjal Dahiya   DG IMMORTALS, Raga, Harjas, Virtual_AF, Sshiv   Deepesh Goyal.mp3"
+          src="assets/songs/Kaleshi Chori (Video) Pranjal Dahiya   DG IMMORTALS, Raga, Harjas, Virtual_AF, Sshiv   Deepesh Goyal.mp3"
           controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Desperado</label>
-        <audio
-          src="Raghav - Desperado (feat. Tesher) (Official Video).mp3"
-          controls class="myaudi"></audio>
+        <audio src="assets/songs/Raghav - Desperado (feat. Tesher) (Official Video).mp3" controls class="myaudi"></audio>
       </div>
+
+
     </div>
 
     <!-- c4 -->
@@ -210,39 +252,74 @@
 
       <div class="audio-row">
         <label for="audio">Kaley Sheshe</label>
-        <audio src="Kaley Sheshe – Addy Nagar   Official Video   @AddyNagar.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Kaley Sheshe – Addy Nagar   Official Video   @AddyNagar.mp3" controls class="myaudi"></audio>
       </div>
 
       <div class="audio-row">
         <label for="audio">Mi Amor - Perfectly Slowed</label>
-        <audio src="Mi Amor - Perfectly Slowed.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Mi Amor - Perfectly Slowed.mp3" controls class="myaudi"></audio>
       </div>
-      
+
       <div class="audio-row">
         <label for="audio">Mi Amor - Sharn, 40k</label>
-        <audio src="Mi Amor (Lyrics) - Sharn, 40k & The Paul.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Mi Amor (Lyrics) - Sharn, 40k & The Paul.mp3" controls class="myaudi"></audio>
       </div>
-      
+
       <div class="audio-row">
         <label for="audio">Obsessed - Riar Saab</label>
-        <audio src="Obsessed - Riar Saab, @AbhijaySharma   Official Music Video.mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Obsessed - Riar Saab, @AbhijaySharma   Official Music Video.mp3" controls class="myaudi"></audio>
       </div>
-      
+
       <div class="audio-row">
         <label for="audio">Shubh - One Love </label>
-        <audio src="Shubh - One Love (Official Audio).mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Shubh - One Love (Official Audio).mp3" controls class="myaudi"></audio>
       </div>
-      
+
       <div class="audio-row">
         <label for="audio">Shubh - Still Rollin </label>
-        <audio src="Shubh - Still Rollin (Official Music Video).mp3" controls class="myaudi"></audio>
+        <audio src="assets/songs/Shubh - Still Rollin (Official Music Video).mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Maari 2 Rowdy Baby</label>
+        <audio src="assets/songs/Maari 2 - Rowdy Baby (Video Song)   Dhanush, Sai Pallavi   Yuvan Shankar Raja   Balaji Mohan.mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Manike</label>
+        <audio src="assets/songs/Manike (Full Video) Thank God   Nora,Sidharth  Tanishk,Yohani,Jubin,Surya R  Rashmi Virag Bhushan K.mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Oc Antava Mawa</label>
+        <audio src="assets/songs/Oo Antava Mawa..Oo Oo Antava Full Video Song   Pushpa Songs   Allu Arjun  DSP  Sukumar  Samantha.mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Tum Tum</label>
+        <audio src="assets/songs/Tum Tum - Video Song   Enemy (Tamil)   Vishal,Arya   Anand Shankar   Vinod Kumar   Thaman S.mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Jailer Kaavaalaa Video Song</label>
+        <audio src="assets/songs/JAILER - Kaavaalaa Video Song   Superstar Rajinikanth   Sun Pictures   Anirudh   Nelson   Tamannaah.mp3" controls class="myaudi"></audio>
+      </div>
+
+      <div class="audio-row">
+        <label for="audio">Heroine</label>
+        <audio
+          src="assets/songs/heroine bhojpuri.mp3"
+          controls class="myaudi"></audio>
       </div>
 
     </div>
 
   </main>
 
-  <br>
+  <div class="space">
+    <p>Thanks for visiting :)</p>
+
+  </div>
 
   <footer>
     <p>&copy; 2023 : LILIFY </p>
