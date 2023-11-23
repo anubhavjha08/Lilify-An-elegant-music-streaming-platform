@@ -1,10 +1,44 @@
+/* resetingDefaultSettings */
+*{
+  margin: 0;
+  padding: 0;
+}
+/* header */
+header {
+  /* background-color: #300a0a; */
+  padding: 1px 0;
+  text-align: center;
+  border: 3px solid #1db954;
+}
+/* mainTitle */
+.main-title{
+  margin: 1% 0;
+  padding: 18px;;
+  /* border: 2px solid white; */
+  font-size: 2rem;
+  color: #1db954;
+  text-transform: uppercase;
+  transition: font-size 0.6s ease-in-out;
+}
+/* h1 hover */
+.main-title:hover{
+  font-size: 3em;
+}
+/* secondaryTitle */
+.sec-title{
+  margin-bottom: 20px;
+  /* border: 2px solid yellow; */
+}
+
 /* Reset some default styles */
-body,
+/* body,
 h1,
 p {
   margin: 0;
   padding: 0;
-}
+} */
+
+
 
 /* Apply a background color to the body */
 body {
@@ -13,26 +47,7 @@ body {
   color: white;
 }
 
-/* Style the header with a dark background */
-header {
-  background-color: #000;
-  padding: 20px 0;
-  text-align: center;
-}
 
-footer {
-  background-color: #1db954;
-  padding: 17px 0;
-  text-align: center;
-}
-
-
-/* Style the header h1 */
-header h1 {
-  font-size: 2rem;
-  color: #1db954;
-  text-transform: uppercase;
-}
 
 /* Style the labels for audio elements */
 label {
@@ -50,11 +65,10 @@ audio.myaudi {
   /* max-width: 250px; */
 }
 
-/* Create a Spotify-inspired grid for media elements with three equal columns */
 .audio-container {
+  margin-top: 3%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Three equal columns */
+  grid-template-columns: repeat(3, 1fr);/* Three equal columns */
   gap: 20px;
   padding: 20px;
   background-color: #000;
@@ -86,7 +100,7 @@ main audio:hover {
 }
 
 /* Style the side pane */
-.side-pane {
+.top-pane {
   background-color: #1db954;
   /* width: 100%; */
   /* padding: 15px; */
@@ -95,80 +109,62 @@ main audio:hover {
 }
 
 
-.side-pane ul {
+.top-pane ul {
   list-style: none;
   padding: 0;
   display: flex;
 }
 
-.side-pane li {
+.top-pane li {
   padding: 1rem;
 }
 
-.side-pane a {
-  text-decoration: none;
+.top-pane a {
+  /* text-decoration: none; */
   color: white;
   font-weight: bold;
   display: block;
   transition: color 0.3s;
-  /* Smooth color transition on hover */
 }
 
 /* Change link color on hover */
-.side-pane a:hover {
+.top-pane a:hover {
   color: #000;
-  /* Dark color on hover */
 }
 
 /* Style the "Sign Up" and "Log In" buttons */
 .auth-buttons {
-  margin-top: 20px;
-  
-}
-
-.auth-buttons button {
-  background-color: #000;
-  /* Dark color */
-  color: #1db954;
-  /* Green color similar to Spotify */
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
+  /* background-color: #000; */
+  /* color: #1db954; */
+  border: 1px solid #000;
+  /* font-weight: bold; */
   transition: background-color 0.3s, color 0.3s;
-  /* Smooth button transition on hover */
+  font-size: 1rem;
 }
 
 /* Change button background and text color on hover */
-.auth-buttons button:hover {
-  background-color: #1db954;
-  /* Green background on hover */
+.auth-buttons:hover {
+  background-color: #808080;
   color: #000;
-  /* Dark text on hover */
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .audio-container {
     grid-template-columns: repeat(2, 1fr);
-    /* Two equal columns for small screens */
   }
 
   /* main audio {
     width: 100%;
     /* Full width for audio elements on small screens */
-  } */
+  }
 
 /* * {
   margin: 0px;
   padding: 0;
 } */
 
-.red {
-
-  padding-top: 9px;
-}
-
-/* Create a Spotify-inspired grid for media elements with four equal columns */
+/* grid for media elements with four equal columns */
 .audio-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Four equal columns */
@@ -182,7 +178,7 @@ main audio:hover {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .audio-container {
-    grid-template-columns: repeat(1, 1fr); /* Two columns for small screens */
+    grid-template-columns: repeat(1, 1fr); /* one column for small screens */
   }
   /* Your other responsive CSS */
 }
@@ -196,4 +192,9 @@ main audio:hover {
   margin: 50px;
   text-transform: uppercase;
   
+}
+footer {
+  background-color: #1db954;
+  padding: 17px 0;
+  text-align: center;
 }
