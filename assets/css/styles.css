@@ -120,7 +120,7 @@ main audio:hover {
 }
 
 .top-pane a {
-  /* text-decoration: none; */
+  text-decoration: none;
   color: white;
   font-weight: bold;
   display: block;
@@ -167,7 +167,7 @@ main audio:hover {
 /* grid for media elements with four equal columns */
 .audio-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  grid-template-columns: repeat(3, 1fr); /* Four equal columns */
   gap: 20px;
   padding: 20px;
   background-color: #000;
